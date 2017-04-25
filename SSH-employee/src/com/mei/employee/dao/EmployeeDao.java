@@ -6,6 +6,7 @@ import com.mei.employee.domain.Employee;
 
 //员工管理的DAO层的接口
 public interface EmployeeDao {
+	
 	Employee findByUsernameAndPassword(Employee employee);
 	
 	int findCount();

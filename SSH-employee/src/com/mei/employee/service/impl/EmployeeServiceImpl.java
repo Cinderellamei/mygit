@@ -2,12 +2,15 @@ package com.mei.employee.service.impl;
 
 import java.util.List;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import com.mei.employee.dao.EmployeeDao;
 import com.mei.employee.domain.Employee;
 import com.mei.employee.domain.PageBean;
 import com.mei.employee.service.EmployeeService;
 
 //员工管理的业务层实现类
+@Transactional
 public class EmployeeServiceImpl implements EmployeeService {
 	private EmployeeDao employeeDao;
 

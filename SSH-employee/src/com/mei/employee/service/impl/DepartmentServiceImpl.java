@@ -2,12 +2,15 @@ package com.mei.employee.service.impl;
 
 import java.util.List;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import com.mei.employee.dao.DepartmentDao;
 import com.mei.employee.domain.Department;
 import com.mei.employee.domain.PageBean;
 import com.mei.employee.service.DepartmentService;
 
 //部门管理的业务层实现类
+@Transactional
 public class DepartmentServiceImpl implements DepartmentService {
 	//注入部门管理的DAO
 	private DepartmentDao departmentDao;

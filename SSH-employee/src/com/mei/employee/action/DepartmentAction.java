@@ -18,6 +18,7 @@ public class DepartmentAction extends ActionSupport implements ModelDriven<Depar
 		return department;
 	}
 	
+	//接收当前的页数
 	private Integer currPage= 1;
 	
 	public void setCurrPage(Integer currPage) {

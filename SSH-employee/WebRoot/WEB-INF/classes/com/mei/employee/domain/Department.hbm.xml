@@ -11,7 +11,7 @@
     		<property name="ddesc" column="ddesc" length="100"/>
     		
     		<!-- 配置关联关系映射 -->
-    		<set name="employees">
+    		<set name="employees" cascade="delete" inverse="true">
     			<key column="dno"/>
     			<one-to-many class="com.mei.employee.domain.Employee"/>
     		</set>

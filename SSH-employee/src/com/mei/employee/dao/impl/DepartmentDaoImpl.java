@@ -19,7 +19,7 @@ public class DepartmentDaoImpl extends HibernateDaoSupport implements Department
 		}
 		return 0;
 	}
-	//分页查询
+	//分页查询部门
 	public List<Department> findByPage(int begin,int pageSize) {
 		DetachedCriteria criteria=DetachedCriteria.forClass(Department.class);
 		List<Department> list=this.getHibernateTemplate().findByCriteria(criteria,begin,pageSize);

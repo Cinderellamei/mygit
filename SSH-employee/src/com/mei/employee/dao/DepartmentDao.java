@@ -6,7 +6,9 @@ import com.mei.employee.domain.Department;
 
 //部门管理的DAO层的接口
 public interface DepartmentDao {
+	
 	int findCount();
+	
 	List<Department> findByPage(int begin,int pageSize);
 	
 	void save(Department department);
